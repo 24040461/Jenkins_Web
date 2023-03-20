@@ -10,7 +10,7 @@ pipeline {
         stage('Build') {
             steps {
                 // Get some code from a GitHub repository
-                git 'https://github.com/jglick/simple-maven-project-with-tests.git'
+                git 'https://github.com/24040461/Jenkins_Web.git'
                 bat "mvn -Dmaven.test.failure.ignore=true clean package"
             }
 
